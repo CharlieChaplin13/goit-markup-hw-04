@@ -38,7 +38,7 @@ img {
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 15px;   
 }
@@ -90,6 +90,7 @@ header {
 }
 /* Логотип */
 .logo {
+    display: block;
     color: var(--logo-text-color);
 
     font-family: "Raleway", sans-serif;
@@ -280,10 +281,11 @@ header {
 /* Футер */
 .footer {
     background-color: var(--accent-bg-color);
+    padding: 60px 0;
 }
 
 .footer-container {
-    padding: 60px 15px;
+    
 }
 
 .footer .logo {

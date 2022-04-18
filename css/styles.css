@@ -158,9 +158,22 @@ header {
 
 /* Баннер (блог-герой) */
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
     padding: 200px 0;
-    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--accent-bg-color);
+
+    text-align: center;
 }
 
 .hero-title {
@@ -194,6 +207,11 @@ header {
 .hero-button:hover, 
 .hero-button:focus {
     background-color: var(--button-hover-color);
+}
+
+/* Overlay */
+.overlay {
+    
 }
 
 /* Особенности */
@@ -282,10 +300,6 @@ header {
 .footer {
     background-color: var(--accent-bg-color);
     padding: 60px 0;
-}
-
-.footer-container {
-    
 }
 
 .footer .logo {

@@ -209,11 +209,6 @@ header {
     background-color: var(--button-hover-color);
 }
 
-/* Overlay */
-.overlay {
-    
-}
-
 /* Особенности */
 .features-list {
     display: flex;

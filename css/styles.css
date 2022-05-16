@@ -3,6 +3,7 @@
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
     --accent-bg-color: #2F303A;
+    --primary-bg-icon-color: rgba(255, 255, 255, 0.1);
 
     /* Цвет шрифтов */
     --primary-text-color: #757575;
@@ -12,6 +13,8 @@
     --accent-color: #2196F3;
     --primary-link-color: rgba(255, 255, 255, 0.6);
     --button-hover-color: #188CE8;
+    --icon-color: #AFB1B8;
+    
 }
 
 body {
@@ -141,7 +144,7 @@ header {
 
 .auth-nav-link {
     color: var(--primary-text-color);
-    display: block;
+    display: flex;
     padding: 12px 0;
 
     font-weight: 500;
@@ -154,6 +157,17 @@ header {
 .auth-nav-link:hover, 
 .auth-nav-link:focus  {
     color: var(--accent-color); 
+}
+
+.auth-nav-icon {
+    margin-right: 10px;
+    display: flex;
+    fill: currentColor;
+}
+
+.auth-nav-icon:hover,
+.auth-nav-icon:focus {
+    fill: currentColor;
 }
 
 /* Баннер (блог-герой) */
@@ -222,6 +236,17 @@ header {
 .features-list .item:not(:first-child) {
     margin-left: 30px;
 }
+
+.features-thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg-color);
+}
+
 .features-title {
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -281,7 +306,6 @@ header {
 .our-team-title {
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
     text-align: center;
 }
 
@@ -291,10 +315,93 @@ header {
     font-weight: 500;
 }
 
+.our-team-text {
+    margin-bottom: 16px;
+}
+
+.our-team-messenger {
+    margin: 0 32px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+
+.messenger-link {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+}
+
+.messenger-link + .messenger-link {
+    margin-left: 10px;
+}
+.messenger-link:hover, .messenger-link:focus {
+    background-color: var(--accent-color);
+}
+
+.our-team-messenger .icon {
+    fill: var(--icon-color);
+}
+
+.our-team-messenger .icon:hover, 
+.our-team-messenger .icon:focus {
+    fill: var(--primary-bg-color);
+}
+
+
+/* Постоянные клиенты */
+.costumers.list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.costumers .item {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+.costumers .item:hover,
+.costumers .item:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.customer-thumb { 
+    padding: 0;
+}
+
+.costumer-icon {
+    fill: var(--icon-color);
+}
+
+.costumer-icon:hover,
+.costumer-icon:focus {
+    fill: var(--accent-color);
+}
+
 /* Футер */
 .footer {
     background-color: var(--accent-bg-color);
     padding: 60px 0;
+}
+
+.footer-container {
+    display: flex;
 }
 
 .footer .logo {
@@ -331,8 +438,51 @@ header {
 .address-nav-link:hover, 
 .address-nav-link:focus {
     color: var(--accent-color);
-    
 }
+
+.join-container {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.join-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.join-messenger {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.join-messenger>.item + .item {
+    margin-left: 10px;
+}
+
+.join-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primary-bg-icon-color);
+}
+
+.join-link:hover,
+.join-link:focus {
+    background-color: var(--accent-color);
+}
+
+.join-icon {
+    fill: var(--secondary-text-color);
+}
+
 /* Стили для портфолио */
 
 /* Кнопки фильтра */
@@ -404,7 +554,6 @@ header {
     font-style: normal;
     font-size: 16px;
     line-height: 1.88;
-    /* identical to box height, or 188% */
 }
 
 

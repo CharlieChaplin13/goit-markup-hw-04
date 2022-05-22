@@ -14,6 +14,8 @@
     --primary-link-color: rgba(255, 255, 255, 0.6);
     --button-hover-color: #188CE8;
     --icon-color: #AFB1B8;
+
+    --border-color: #EEEEEE;
     
 }
 
@@ -44,6 +46,15 @@ img {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;   
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: currentColor;
 }
 
 /* Секция */
@@ -327,11 +338,9 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-  
 }
 
-.messenger-link {
-    
+.messenger-link {  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,59 +348,53 @@ header {
     height: 44px;
     border: none;
     border-radius: 50%;
+    color: var(--icon-color);
+}
+
+.messenger-link:hover,
+.messenger-link:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    
 }
 
 .messenger-link + .messenger-link {
     margin-left: 10px;
 }
-.messenger-link:hover, .messenger-link:focus {
-    background-color: var(--accent-color);
-}
-
-.our-team-messenger .icon {
-    fill: var(--icon-color);
-}
-
-.our-team-messenger .icon:hover, 
-.our-team-messenger .icon:focus {
-    fill: var(--primary-bg-color);
-}
 
 
 /* Постоянные клиенты */
-.costumers.list{
+.clients{
     display: flex;
     justify-content: space-between;
-    
 }
 
-.costumers .item {
+.clients .item {
     width: 170px;
-    height: 92px;
+    height: 92px; 
+}
+
+.client-link { 
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
     fill: var(--icon-color);
+    color: var(--icon-color);
     border: 1px solid var(--icon-color);
     border-radius: 4px;
 }
 
-.costumers .item:hover,
-.costumers .item:focus {
-    border: 1px solid var(--accent-color);
+.client-link:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
-.customer-thumb { 
-    padding: 0;
-}
-
-.costumer-icon {
-    fill: var(--icon-color);
-}
-
-.costumer-icon:hover,
-.costumer-icon:focus {
-    fill: var(--accent-color);
+.client .icon:hover,
+.client .icon:focus {
+    fill: currentColor;
 }
 
 /* Футер */
@@ -511,7 +514,8 @@ header {
     cursor: pointer;
 }
     
-.filter-button:hover, .filter-button:focus {
+.filter-button:hover, 
+.filter-button:focus {
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
@@ -532,12 +536,23 @@ header {
 }
 
 .examples-link {
+    display: block;
     text-decoration: none;
+    color: inherit;
+}
+
+.examples-link:hover,
+.examples-link:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .examples-card {
     padding: 20px 24px;
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .examples-title {

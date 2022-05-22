@@ -387,7 +387,8 @@ header {
     border-radius: 4px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
@@ -395,6 +396,7 @@ header {
 .client .icon:hover,
 .client .icon:focus {
     fill: currentColor;
+    border-color: inherit;
 }
 
 /* Футер */

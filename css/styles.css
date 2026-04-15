@@ -17,9 +17,7 @@
   --grey: rgba(46, 47, 66, 0.7);
   --white: #fff;
   --dairy: #fcfcfc;
-}
 
-:root {
   --font-family: 'Roboto', sans-serif;
   --second-family: 'Raleway', sans-serif;
 }
@@ -231,7 +229,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--white);
-  margin: 0 auto;
   max-width: 496px;
   margin-bottom: 48px;
 }

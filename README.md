@@ -1,2 +1,3 @@
-# goit-markup-hw-01
-FS-129. Module 1: HTML Basics
+# goit-markup-hw-03
+
+FS-129. Module 3: Box model. Flexbox

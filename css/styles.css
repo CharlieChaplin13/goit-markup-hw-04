@@ -569,5 +569,6 @@ img {
   background-color: var(--green);
 }
 
-/* .footer-social-icon {
-} */
+.footer-social-icon {
+  fill: var(--cloud);
+}
